@@ -3,7 +3,7 @@ DOCUMENTATION = '''
 module: json_file_replacer
 short_description: Replace the value of a specific key inside a json
 description:
-    - Makes Replacer json file. Is created to replace recursively, inside a json file, the value of a specific key. You can create a backup of the file.
+    - Replace recursively, inside a json file, the value of a specific key.
 version_added: "0.1"
 options:
   path:
