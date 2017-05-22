@@ -86,7 +86,6 @@ def main():
 
     try:
         if backup:
-            print backup
             copyfile(path, path + ".bkp")
 
         json_data = json.loads(open(path).read())
@@ -101,13 +100,10 @@ def main():
             f.close()
 
         isFound = (original_data == json_data) and False or True
-
         module.exit_json(msg="Deep replacer finished", changed=isFound)
-
     except Exception:
         e = get_exception()
         module.fail_json(msg=str(e))
-
 
 # import module snippets
 from ansible.module_utils.basic import AnsibleModule
