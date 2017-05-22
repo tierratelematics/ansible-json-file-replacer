@@ -36,7 +36,7 @@ EXAMPLES = '''
 # Basic example of json file replacer
 tasks:
 - name: "Replace the value of specific key inside a json file"
-  cloudfront_invalidate:
+  json_file_replacer:
     path: "ABSOLUTE_PATH"
     keyToFind: "KEY_TO_FIND"
     valueToReplace: "VALUE_TO_REPLACE"
