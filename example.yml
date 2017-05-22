@@ -1,0 +1,11 @@
+- name: "Example playbook showing usage of json_file_replacer module"
+  hosts: localhost
+  connection: local
+
+  tasks:
+  - name: "Replace the value of specific key inside a json file"
+    cloudfront_invalidate:
+      path: "ABSOLUTE_PATH"
+      keyToFind: "KEY_TO_FIND"
+      valueToReplace: "VALUE_TO_REPLACE"
+      backup: True
